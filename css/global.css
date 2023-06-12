@@ -1,0 +1,484 @@
+/**
+ * Global styles for osu-origin
+ */
+
+/*
+Override parent theme (origin)
+*/
+body {
+    font-family: 'capita', serif;
+  }
+  
+  a,
+  a:visited,
+  #footer a:hover,
+  .entry-title a:hover
+  {
+    color: #bb0000;
+  }
+  
+  a:focus
+  {
+    outline: 3px dotted #bb0000 !important;
+    outline-offset: -3px;
+  }
+  
+  #respond #submit,
+  .button,
+  a.button,
+  .wpcf7-submit,
+  #loginform .button-primary
+  { 
+    background-color: #bb0000;
+  }
+  
+  a:hover, a:focus {
+    color: #000;
+  }
+  
+  #branding {
+      overflow: visible;
+  }
+  
+  #site-title {
+    font-family: 'capita', serif;
+    font-size: 2.75em;
+    letter-spacing: normal;
+  }
+  
+  #site-description {
+      float: none;
+  }
+  
+  /*
+  Navigation
+  */
+  .sf-sub-indicator {
+    padding-left: 10px;
+  }
+  
+  #menu-primary ul li.sfHover > a:focus
+  {
+    color: #222;
+    outline: dotted 1px #222222;
+  }
+  
+  /*
+  A11y Navbar
+  */
+  .menu li {
+      float: none;
+  }
+  
+  .home nav#site-navigation {
+      border-bottom: 1px solid #e5e5e5;
+  }
+  
+  nav#site-navigation {
+      width: 100%;
+      padding: 18px 0 20px;
+      margin-top: 0;
+  }
+  
+  nav#site-navigation.a11y-navbar ul.a11y-navbar-menubar > li.current-menu-ancestor > a,
+  nav#site-navigation.a11y-navbar ul.a11y-navbar-menubar > li.current-menu-item.menu-item-home > a,
+  nav#site-navigation.a11y-navbar ul.a11y-navbar-menubar > li.current-menu-item > a
+  {
+      text-decoration: underline;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar {
+      background-color: transparent;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal li a[role="menuitem"].a11y-navbar-menuitem {
+      border-right: none;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar li {
+      overflow: visible;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar li a[role="menuitem"] {
+      color: #bb0000;
+      font-family: 'capita', serif;
+      font-size: 1.125em;
+      font-weight: 400;
+      background-color: transparent;
+      line-height: 1.5rem;
+      padding: 0 1rem 0 1rem;
+      display: block;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar > li:first-child a[role="menuitem"] {
+      padding-left: 0;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal ul[role="menu"] li a[role="menuitem"] {
+      background-color: #fff;
+      padding: 12px 15px;
+      border-bottom: none;
+      border-top: 1px dotted #e5e5e5;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal ul[role="menu"] li:first-child > a[role="menuitem"] {
+      border-top: none;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal li ul[role="menu"].a11y-navbar-menu-open {
+      display: block !important;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 7px 0px;
+      width: 15em;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal li a[role="menuitem"].a11y-navbar-menuitem[aria-haspopup="true"]::after {
+      border-top-color: #bb0000;
+      top: 42%;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal li a[role="menuitem"].a11y-navbar-menuitem[aria-haspopup="true"]:hover::after,
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal li a[role="menuitem"].a11y-navbar-menuitem[aria-haspopup="true"]:focus::after
+  {
+      border-top-color: #333;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar li a[role="menuitem"]:focus,
+  nav.a11y-navbar ul.a11y-navbar-menubar li a[role="menuitem"]:hover
+  {
+      background-color: transparent;
+      color: #333;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal ul[role="menu"] li a[role="menuitem"]:focus,
+  nav.a11y-navbar ul.a11y-navbar-menubar.a11y-navbar-orientation-horizontal ul[role="menu"] li a[role="menuitem"]:hover
+  {
+      background-color: #efefef;
+      color: #333;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar li ul[role="menu"].a11y-navbar-menu-open li a[aria-haspopup="true"]::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 0.25rem solid transparent;
+      border-bottom: 0.25rem solid transparent;
+      border-left: 0.25rem solid #2d2d2d;
+      position: absolute;
+      right: 0.25rem;
+      top: 42%;
+  }
+  
+  nav.a11y-navbar ul.a11y-navbar-menubar li ul[role="menu"].a11y-navbar-menu-open li a[aria-haspopup="true"]:focus::after,
+  nav.a11y-navbar ul.a11y-navbar-menubar li ul[role="menu"].a11y-navbar-menu-open li a[aria-haspopup="true"]:hover::after
+  {
+      border-left-color: #2d2d2d;
+  }
+  
+  /*
+  OSU specific styles
+  */
+  #container {
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: auto 80px;
+  }
+  
+  #branding {
+    float: none;
+    width: 100%;
+    border-bottom: 5px solid #444;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  
+  }
+  
+  #site-title {
+    margin-bottom: 5px;
+    text-transform: none;
+    font-weight: 600;
+  }
+  
+  .home #site-description,
+  #site-description
+  {
+    border-top: none;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .home #menu-primary {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  #menu-primary {
+    width: 100%;
+    padding: 18px 0 20px;
+    margin-top: 0;
+  }
+  
+  #menu-primary .menu {
+    float: left;
+  }
+  
+  #menu-primary li a {
+    font-size: 1.125em;
+    margin-left: 0;
+    margin-right: 2em;
+    text-transform: none;
+  }
+  
+  #menu-primary li ul {
+    left: 0;
+  }
+  
+  .home #main {
+    padding-top: 20px;
+  }
+  
+  .hentry .entry-title {
+    font-size: 1.5em;
+    text-transform: none;
+  }
+  
+  .singular .entry-title {
+    font-size: 1.9em;
+  }
+  
+  .entry-content,
+  .entry-summary
+  {
+    font-size: 1.2em;
+  }
+  
+  .entry-content h1 {
+    font-size: 1.583em; /* 1/15.6 * 24.7pt = 1.583 */
+  }
+  
+  .entry-content ul {
+    margin-left: 48px;
+  }
+  
+  .byline,
+  .sidebar .widget-title,
+  #footer
+  {
+    color: #999;
+  }
+  
+  .sidebar .widget-title {
+    font-size: 1.25em;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+  
+  .footer-content {
+    padding-top: 32px;
+    
+    background-image: url('../img/OSU-Wordmark-HorizK-RGBHEX.svg');
+    background-repeat: no-repeat;
+    background-size: auto 22px;
+    
+    position: relative;
+  }
+  
+  .osu-contact-name {
+    font-weight: 600;
+  }
+  
+  .osu-street-address span {
+    margin-right: 5px;
+  }
+  
+  .osu-telecommunication span {
+    padding: 0 5px;
+    border-right: solid 1px #000;
+  }
+  
+  .osu-telecommunication span:first-child {
+    padding-left: 0;
+  }
+  
+  .osu-telecommunication span:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+  
+  .footer-text,
+  .osu-disclaimer,
+  .accessibility-notice
+  {
+    margin: 15px 0;
+  }
+  
+  .u-osu-powered {
+    position: absolute;
+    top: -3px;
+    right: 0;
+  }
+  
+  /*
+    Social Media Icons
+  */
+  .osu-social-media-links {
+    margin: 0 0 20px 0;
+  }
+  
+  .osu-social-media-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .osu-social-media-links li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  .osu-social-media-links li a {
+    display: block;
+    background-color: #666;
+    width: 36px;
+    height: 36px;
+    color: #FFF;  margin: 0 5px 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 36px;
+  }
+  
+  .osu-social-media-links li a:hover {
+    background-color: #bb0000;
+  }
+  
+  .osu-social-media-links li.yammer a {
+    background-image: url('../img/yammer-icon-white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px auto;
+  }
+  
+  .osu-social-media-links li a span.fa {
+    font-size: 1.846em; /* 1/13 * 24pt = 1.846em */
+    vertical-align: middle;
+  }
+  
+  /*
+    OSU Branding
+  */
+  #container.osu-brand-default {
+    padding-top: 90px;
+    background-image: url('../img/osu-logo-vert.svg');
+    background-size: auto 68.5px;
+  }
+  
+  #container.osu-brand-asc {
+    background-image: url('../img/secondary-signature/asc.svg');
+  }
+  
+  #container.osu-brand-dentistry {
+    background-image: url('../img/secondary-signature/dentistry.svg');
+  }
+  
+  #container.osu-brand-ehe {
+    background-image: url('../img/secondary-signature/ehe.svg');
+    background-size: auto 90px;
+  }
+  
+  #container.osu-brand-engineering {
+    background-image: url('../img/secondary-signature/engineering.svg');
+  }
+  
+  #container.osu-brand-faes {
+    background-image: url('../img/secondary-signature/faes.svg');
+    background-size: auto 90px;
+  }
+  
+  #container.osu-brand-fcob {
+    background-image: url('../img/secondary-signature/fcob.svg');
+  }
+  
+  #container.osu-brand-hsc {
+    padding-top: 60px;
+    background-image: url('../img/secondary-signature/hsc.svg');
+    background-size: 300px auto;
+  }
+  
+  #container.osu-brand-james-ccc {
+    padding-top: 130px;
+    background-image: url('../img/secondary-signature/james-ccc.svg');
+    background-size: auto 100px;
+  }
+  
+  #container.osu-brand-james-wexner {
+    padding-top: 130px;
+    background-image: url('../img/secondary-signature/james-wexner.svg');
+    background-size: auto 100px;
+  }
+  
+  #container.osu-brand-johnglenn-pa {
+    background-image: url('../img/secondary-signature/johnglenn-pa.svg');
+  }
+  
+  #container.osu-brand-kirwan {
+    padding-top: 110px;
+    background-image: url('../img/secondary-signature/kirwan.svg');
+    background-size: auto 100px;
+  }
+  
+  #container.osu-brand-law {
+    background-image: url('../img/secondary-signature/moritz-law.svg');
+  }
+  
+  #container.osu-brand-lima {
+    background-image: url('../img/secondary-signature/lima.svg');
+  }
+  
+  #container.osu-brand-mansfield {
+    background-image: url('../img/secondary-signature/mansfield.svg');
+  }
+  
+  #container.osu-brand-marion {
+    background-image: url('../img/secondary-signature/marion.svg');
+  }
+  
+  #container.osu-brand-medicine {
+    background-image: url('../img/secondary-signature/medicine.svg');
+  }
+  
+  #container.osu-brand-newark {
+    background-image: url('../img/secondary-signature/newark.svg');
+  }
+  
+  #container.osu-brand-nursing {
+    background-image: url('../img/secondary-signature/nursing.svg');
+  }
+  
+  #container.osu-brand-optometry {
+    background-image: url('../img/secondary-signature/optometry.svg');
+  }
+  
+  #container.osu-brand-pharmacy {
+    background-image: url('../img/secondary-signature/pharmacy.svg');
+  }
+  
+  #container.osu-brand-publichealth {
+    background-image: url('../img/secondary-signature/publichealth.svg');
+  }
+  
+  #container.osu-brand-socialwork {
+    background-image: url('../img/secondary-signature/socialwork.svg');
+  }
+  
+  #container.osu-brand-vetmed {
+    background-image: url('../img/secondary-signature/vetmed.svg');
+  }
+  
+  #container.osu-brand-wexner {
+    padding-top: 60px;
+    background-image: url('../img/secondary-signature/wexner.svg');
+    background-size: 300px auto;
+  }
